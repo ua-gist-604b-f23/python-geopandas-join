@@ -1,0 +1,36 @@
+name: Check for required files
+
+on:
+  push:
+    branches: [ geopandas ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Check 1 files
+        id: check_1_files
+        uses: andstor/file-existence-action@v1
+        with:
+          files: "spatial_join.py"
+
+      - name: Required files exist
+        if: steps.check_1_files.outputs.files_exists != 'true'
+        run: |
+          echo Required file, 'spatial_join.py', is missing
+          exit 1
+          
+      - name: Check 2 files
+        id: check_2_files
+        uses: andstor/file-existence-action@v1
+        with:
+          files: "spatial_join.png"
+
+      - name: Required files exist
+        if: steps.check_2_files.outputs.files_exists != 'true'
+        run: |
+          echo Required file, 'spatial_join.png', is missing
+          exit 1
+          

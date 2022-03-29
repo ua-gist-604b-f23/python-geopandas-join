@@ -131,6 +131,10 @@ nybb_with_mean_ratings = nybb.merge(mean_rating_by_boro, on='BoroCode' )
 nybb_with_mean_ratings.head()
 ```
 
-### Deliverable
 Save your final python file as `spatial_join.py` in this repository. Additionally, take a screenshot showing the results
 of the final step in the assignment and save it as `spatial_join.png`.
+
+### Deliverable
+Create a branch named `geopandas` and include the following files in a new Pull Request to merge with `master`. 
+- `spatial_join.py`
+- `spatial_join.png`
