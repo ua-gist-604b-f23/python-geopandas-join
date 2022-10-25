@@ -1,3 +1,4 @@
+![Open in Codespaces](https://classroom.github.com/assets/open-in-codespaces-abfff4d4e15f9e1bd8274d9a39a0befe03a0632bb0f153d0ec72ff541cedbe34.svg)
 # Python Spatial Programming with Geopandas
 ## Assignment
 
@@ -23,24 +24,20 @@ Docs can be good or bad. The docs for above range from "ok" to "good". It helps 
 The objective of this lab is to reproduce one of the QGIS Tutorials you did previously:
 - [Performing spatial joins](http://www.qgistutorials.com/en/docs/3/performing_spatial_joins.html)
 
-### Prerequisites
-- Python 3 must be installed [Download](https://www.python.org/downloads/)
-- Docker must be installed
-
-### Deliverables
-- `spatial_join.py`
-- `spatial_join.png`
 
 ### Directions
 ## Create a new branch to work from. 
+Create a new branch named `geopandas`.
 
-You can name it whatever you want but if you need a suggestion, go with `assignment`. 
-
-## Start your codespace on the `assignment branch`
+## Start your codespace on the `geopandas` branch
 From the main GitHub page for this assignment, click `Code` -> `Codespaces` -> `Create codespace on assignment`. This will create the codespace and open a new browser window to connect to the codespace.
 
-## Follow the instructions in `assignment.ipynb` file inside your codespace
-Along the way you will create the following:
+![create-codespace.png](./media/create-codespace.png)
+
+## Follow the instructions in `assignment.ipynb` inside your codespace
+The details for the assignment are embedded in a Jupyter notebook. You can work through the material in the codespace.
+
+## Deliverables
+An open Pull Request from a branch named `geopandas` to be merged with `master` containing the following files:
 - `spatial_join.py`
 - `spatial_join.png`
-- `screencap_codespace.png`
